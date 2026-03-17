@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(270deg,#000000,#001f3f,#004080,#87ceeb,#ffffff,#87ceeb,#004080,#001f3f,#000000);
+  background-size:1200% 1200%;
+  animation:sunrise 25s ease infinite;
+  color: white;
+}
+
+@keyframes sunrise {
+  0% { background-position:0% 50%; }
+  50% { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  background: rgba(0,0,0,0.6);
+}
+
+.card {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* FORM INPUTS */
+input, textarea {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  padding: 15px; /* bigger padding */
+  border-radius: 8px;
+  border: none;
+  font-size: 20px; /* bigger font */
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Placeholder font size */
+input::placeholder,
+textarea::placeholder {
+  font-size: 18px; /* bigger placeholder text */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.lead-box {
+  background: rgba(255,255,255,0.1);
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.lead-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px silver;
+}
+
+.status-btn {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.status-new { background: #f59e0b; }
+.status-contacted { background: #3b82f6; }
+.status-converted { background: #22c55e; }
+.status-delete {
+  background: #ef4444; /* red */
+  margin-left: 5px;
+}
+.status-delete:hover {
+  background: #dc2626;
+}

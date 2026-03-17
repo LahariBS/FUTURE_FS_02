@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini CRM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Mini CRM</h1>
+</header>
+
+<section class="card" id="lead-form">
+  <h2>Add New Lead</h2>
+  <input type="text" id="name" placeholder="Name :">
+  <input type="email" id="email" placeholder="Email :">
+  <input type="text" id="source" placeholder="Source :">
+  <textarea id="notes" placeholder="Notes :"></textarea>
+  <button id="add-lead">Add Lead</button>
+</section>
+
+<section class="card" id="leads-list">
+  <h2>Leads</h2>
+  <div id="leads-container"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
